@@ -13,8 +13,8 @@ def Resistor(id):
     line = SymbolLine(pts, stroke, fill)
     g = GrUnit(library_id=id, unit=0, style=1, elements=[line])
 
-    pin1 = Pin('passive', 'line', PositionIdentifier(-3.81, 0, 0), 1.27, PinName("~", TextEffects(Font(1.27, 1.27))), PinNumber("1",TextEffects(Font(1.27, 1.27))))
-    pin2 = Pin('passive', 'line', PositionIdentifier(3.175, 0, 180), 1.27, PinName("~", TextEffects(Font(1.27, 1.27))), PinNumber("2",TextEffects(Font(1.27, 1.27))))
+    pin1 = Pin('passive', 'line', PositionIdentifier(-4.445, 0, 0), 1.905, PinName("~", TextEffects(Font(1.27, 1.27))), PinNumber("1",TextEffects(Font(1.27, 1.27))))
+    pin2 = Pin('passive', 'line', PositionIdentifier(3.81, 0, 180), 1.905, PinName("~", TextEffects(Font(1.27, 1.27))), PinNumber("2",TextEffects(Font(1.27, 1.27))))
 
     pins = PinUnit(library_id=id, unit=1, style=1, elements=[pin1, pin2])
 
